@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta http-equiv="Content-Type" charset=utf-8">
+        <title> Easy_Calculator </title>
+
+        <style>
+        body {
+    		
+   		}
+        #calc {
+			width: 400px;
+			padding: 1px;
+			padding-bottom: 2px;
+			border: 1px solid #1a191a;
+			font-size: 0;
+			margin: 0 auto;
+			position: relative;
+			background: #1a191a;
+		}
+		#display {
+			display: block;
+			width: 389px;
+			height: 75px;
+			border: 1px solid #1a191a;
+			margin: 0 auto;
+			margin: 1px;
+			text-align: right;
+			outline: 0;
+			background: #0d0d0d;
+			padding-right: 7px;
+			font-size: 29px;
+			color: #ffffff;
+			font-family: Arial, Helvetica, sans-serif;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			-o-user-select: none;
+			user-select: none;
+		}
+		.button {
+			width: 96px;
+			height: 64px;
+			line-height: 64px;
+			display: inline-block;
+			cursor: pointer;
+			border: 1px solid #403f40;
+			margin: 1px;
+			font-size: 20px;
+			text-align: center;
+			transition: background .2s,
+			color .2s;
+			font-family: Arial, Helvetica, sans-serif;
+			background: #343233;
+			color: #e6e5e6;
+			-webkit-user-select: none;
+		}
+		.button:hover {
+			background: #4d4c4d;
+			color: #ffffff;
+		}
+		.button_C {
+			position: absolute;
+			left: 5px;
+			top: 9px;
+			width: 23px;
+			height: 23px;
+			font-size: 16px;
+			line-height: 23px;
+			font-family: Arial, Helvetica, sans-serif;
+			background: #4d4c4d;
+			color: #0d0d0d;
+			-webkit-user-select: none;
+		}
+
+		.button_BS {
+			position: absolute;
+			left: 5px;
+			top: 43px;
+			width: 23px;
+			height: 23px;
+			font-size: 22px;
+			line-height: 22px;
+			font-family: Arial, Helvetica, sans-serif;
+			background: #4d4c4d;
+			color: #0d0d0d;
+			-webkit-user-select: none;
+		}
+
+		.button_C:hover {
+			background: #747274;
+			color: #e6e5e6;
+		}
+
+		.button_BS:hover {
+			background: #747274;
+			color: #e6e5e6;
+		}
+
+		.button_equally {
+			background: #E50914;
+			color: #e6e5e6;
+		}
+
+		.button_equally:hover {
+			background: #f73b45;
+			color: #ffffff;
+		}
+		
+        </style>
+        <script src = "main.js">
+          </script>    
+
+    
+    </head>
+    
+    <body background = calc_back.jpg>
+        
+       	<div id='calc'>
+		<input type='text' id='display' value='0' disabled>
+		<div class='button button_C' title='Clear' data-type='C' id='C'>C</div>
+		<div class='button button_BS' title='Backspace' data-type='Backspace' id='Backspace'>&#8678;</div>
+		<div class='button' data-type='7' id='7'>7</div>
+		<div class='button' data-type='8' id='8'>8</div>
+		<div class='button' data-type='9' id='9'>9</div>
+		<div class='button' data-type='/' id='/'>&divide;</div>
+		<div class='button' data-type='4' id='4'>4</div>
+		<div class='button' data-type='5' id='5'>5</div>
+		<div class='button' data-type='6' id='6'>6</div>
+		<div class='button' data-type='*' id='*'>&times;</div>
+		<div class='button' data-type='1' id='1'>1</div>
+		<div class='button' data-type='2' id='2'>2</div>
+		<div class='button' data-type='3' id='3'>3</div>
+		<div class='button' data-type='-' id='-'>&ndash;</div>
+		<div class='button' data-type='0' id='0'>0</div>
+		<div class='button' data-type='.' id='.'>.</div>
+		<div class='button button_equally' data-type='Enter' id='Enter'>=</div>
+		<div class='button' data-type='+' id='+'>+</div>
+		</div> 
+    	
+    </body>
+</html>
